@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <title>🎬 電影盲盒拉霸機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="bg-poster"></div>
+
+    <div class = "container">
+        <h1>🎬 電影盲盒拉霸機</h1>
+        <p>今晚不知道看什麼？交給命運來決定吧！</p>
+
+        <div class="filter-section">
+            <label for="genre-select">選擇你想看的類型：</label>
+            <select id="genre-select">
+                <option value="28">動作 Action</option>
+                <option value="35">喜劇 Comedy</option>
+                <option value="27">恐怖 Horror</option>
+                <option value="878">科幻 Sci-Fi</option>
+            </select>
+        </div>
+
+        <div class="slot-machine-window">
+            <div id="slot-track" class="slot-track">
+                <div class="slot-item">❓ 點擊開始抽獎</div>
+            </div>
+        </div>
+
+        <button id="spin-btn">🎰 開始盲盒抽獎！</button>
+
+        <div id="movie-result-panel" style="margin-top: 25px; display: none;">
+            <hr style="border: 0; border-top: 1px solid #444; margin-bottom: 20px;">
+            <h2 id="result-title" style="color: #f1c40f;">🎉 中獎電影！</h2>
+        
+            <p style="font-size: 1.1rem; margin: 5px 0;">
+                <span id="result-rating">⭐ 評分：--</span> |
+                <span id="result-date">📅 上映：--</span>
+            </p>
+
+            <p id="result-overview" style="color: #ccc; line-height: 1.6; margin: 15px 0; text-align: left;">
+                這裡會顯示電影劇情大綱...
+            </p>
+
+            <a id="result-trailer" href="#" target="_blank" style="
+                display: inline-block;
+                background: #e74c3c;
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-weight: bold;
+                margin-top: 10px;">🎬 點我觀看預告片</a>
+            
+            <button id="back-btn" style="display: inline-block; background: #7f8c8d; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin-top: 10px; cursor: pointer;">↩️ 返回抽獎</button>
+        </div>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
